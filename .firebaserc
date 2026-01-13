@@ -1,5 +1,12 @@
 {
   "projects": {
     "default": "faktureapp"
+  },
+  "targets": {
+    "faktureapp": {
+      "hosting": {
+        "apoteka": ["apoteka-app"]
+      }
+    }
   }
 }
