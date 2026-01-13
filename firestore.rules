@@ -22,5 +22,8 @@ service cloud.firestore {
     match /pharmacy_units/{document=**} {
       allow read, write: if request.auth != null;
     }
+    match /pharmacy_users/{document=**} {
+      allow read, write: if request.auth != null;
+    }
   }
 }
